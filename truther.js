@@ -195,7 +195,6 @@ var valls = [
     "ce perdant de Manuel Valls"
 ];
 
-var didReplace = false;
 
 function randomIntFromInterval(min,max)
 {
@@ -218,31 +217,66 @@ function replacer(list){
 
 function walkText(node) {
   if (node.nodeType == 3) {
-    node.data = node.data.replace(/[fF]ran[cç]ois [fF]illon/g, replacer(fillons));
-    node.data = node.data.replace(/[Pp]hilippe [pP]outou/g, replacer(poutous));
-    node.data = node.data.replace(/[jJ]ean[ -][lL]uc [mM][ée]lenchon/g, replacer(melenchons));
-    node.data = node.data.replace(/[eE]mmanuel [mM]acron/g, replacer(macrons));
-    node.data = node.data.replace(/[fF]ran[cç]ois [aA]sselineau/g, replacer(asselineaux));
-    node.data = node.data.replace(/[nN]icolas [dD]upont[- ][aA]ignan/g, replacer(aignans));
-    node.data = node.data.replace(/[jJ]ean [lL]assalle/g, replacer(lassalles));
-    node.data = node.data.replace(/[jJ]acques [cC]heminade/g, replacer(cheminades));
-    node.data = node.data.replace(/[bB]eno[iî]t [hH]amon/g, replacer(hamons));
-    node.data = node.data.replace(/[mM]arine [lL]e [pP]en/g, replacer(pens));
-    node.data = node.data.replace(/[nN]athalie [aA]rthaud/g, replacer(arthauds));
-    node.data = node.data.replace(/[fF]ran[cç]ois [hH]ollande/g, replacer(hollandes));
-    node.data = node.data.replace(/[dD]onald [tT]rump/g, replacer(arthauds));
-    node.data = node.data.replace(/[mM]anuel [vV]alls/g, replacer(valls));
-    if(didReplace){
+      var fillonReg = /[fF]ran[cç]ois [fF]illon/g;
+      var poutouReg = /[Pp]hilippe [pP]outou/g;
+      var melenchonReg = /[jJ]ean[ -][lL]uc [mM][ée]lenchon/g;
+      var macronReg = /[eE]mmanuel [mM]acron/g;
+      var asselineauReg = /[fF]ran[cç]ois [aA]sselineau/g;
+      var aignanReg = /[nN]icolas [dD]upont[- ][aA]ignan/g;
+      var lassalleReg = /[jJ]ean [lL]assalle/g;
+      var cheminadeReg = /[jJ]acques [cC]heminade/g;
+      var hamonReg = /[bB]eno[iî]t [hH]amon/g;
+      var penReg = /[mM]arine [lL]e [pP]en/g
+      var arthaudReg = /[nN]athalie [aA]rthaud/g;
+      var hollandeReg = /[fF]ran[cç]ois [hH]ollande/g;
+      var trumpReg = /[dD]onald [tT]rump/g;
+      var vallsReg = /[mM]anuel [vV]alls/g;
+      var sarkoReg = /[nN]icolas [sS]arkozy/g;
+
+      if(
+          node.data.search(fillonReg) >= 0 ||
+          node.data.search(poutouReg) >= 0 ||
+          node.data.search(melenchonReg) >= 0 ||
+          node.data.search(macronReg) >= 0 ||
+          node.data.search(asselineauReg) >= 0 ||
+          node.data.search(aignanReg) >= 0 ||
+          node.data.search(lassalleReg) >= 0 ||
+          node.data.search(cheminadeReg) >= 0 ||
+          node.data.search(hamonReg) >= 0 ||
+          node.data.search(penReg) >= 0 ||
+          node.data.search(arthaudReg) >= 0 ||
+          node.data.search(hollandeReg) >= 0 ||
+          node.data.search(trumpReg) >= 0 ||
+          node.data.search(vallsReg) >= 0 ||
+          node.data.search(sarkoReg) >= 0
+      ) {
+
+        node.data = node.data.replace(fillonReg, replacer(fillons));
+        node.data = node.data.replace(poutouReg, replacer(poutous));
+        node.data = node.data.replace(melenchonReg, replacer(melenchons));
+        node.data = node.data.replace(macronReg, replacer(macrons));
+        node.data = node.data.replace(asselineauReg, replacer(asselineaux));
+        node.data = node.data.replace(aignanReg, replacer(aignans));
+        node.data = node.data.replace(lassalleReg, replacer(lassalles));
+        node.data = node.data.replace(cheminadeReg, replacer(cheminades));
+        node.data = node.data.replace(hamonReg, replacer(hamons));
+        node.data = node.data.replace(penReg, replacer(pens));
+        node.data = node.data.replace(arthaudReg, replacer(arthauds));
+        node.data = node.data.replace(hollandeReg, replacer(hollandes));
+        node.data = node.data.replace(trumpReg, replacer(trumps));
+        node.data = node.data.replace(vallsReg, replacer(valls));
+        node.data = node.data.replace(sarkoReg,replacer(sarkos));
+
         node.data = node.data.replace(/\. [a-z]/g, capLastOfThreeLetter);
         node.data = capFirstLetter(node.data);
-        didReplace = false;
-    }
-    if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
+      }
+
+  }
+  if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
         for (var i = 0; i < node.childNodes.length; i++) {
         walkText(node.childNodes[i]);
         }
     }
-  }
 }
 
 walkText(document.body);
