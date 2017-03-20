@@ -21,9 +21,11 @@ var fillons = [
 
 var poutous = [
     'ce réac de Philippe Poutou',
-    'Philippe Poutou, qui a échoué au bac pro',
+    'Philippe Poutou (qui a échoué au bac pro)',
     'cet énervé de Philippe Poutou',
-    'Philippe Poutou qui de toutes façons ne sera pas au deuxième tour'
+    'Philippe Poutou qui de toutes façons ne sera pas au deuxième tour',
+    'un des tristes perdants du premier tour, Philippe Poutou',
+    'ce consternant Philippe Poutou'
 ];
 
 var melenchons = [
@@ -61,19 +63,23 @@ var macrons = [
 var asselineaux = [
     'cette victime de François Asselineau',
     'Asselineau le parano',
-    'le candidat de Ligue 2, François Asselineau'
+    'le candidat de Ligue 2, François Asselineau',
+    'le malheureux perdant François Asselineau',
+    'ce loser de François Asselineau'
 ];
 
 var aignans = [
     'Nicolas Dupont-Aignan qui ne sera pas élu',
     'Nicolas Dupont-Aignan (celui qui n\'aime pas TF1)',
-    'ce râleur de Dupont-Aignan'
+    'ce râleur de Dupont-Aignan',
+    'ce gros rageux de Dupont-Aignan'
 ];
 
 var lassalles = [
-    'Jean Lassalle (le pote à Bachar)',
+    'Jean Lassalle (quelqu\'un sait ce qu\'il fait là ?)',
     'Lassalle le randonneur',
-    'Jean Lassalle qui ne sera pas au deuxième tour'
+    'Jean Lassalle qui ne sera pas au deuxième tour',
+    'ce désolant Jean Lassalle'
 ];
 
 var cheminades = [
@@ -81,7 +87,8 @@ var cheminades = [
     'Cheminade le chef des colons martiens',
     'Jacques Cheminade que personne ne comprend',
     'Jacques le fan de SF',
-    'Cheminade (qui ne passera pas le premier tour)'
+    'Cheminade (qui ne passera pas le premier tour)',
+    'ce loser de Cheminade'
 ];
 
 var hamons = [
@@ -119,13 +126,12 @@ var pens = [
     "Marine, la fille de cet abruti de Jean-Marie",
     'Marine Le Pen (celle qui a peur des noirs)'
 ];
-[];
 
 var arthauds = [
     'Nathalie Marteau et Faucille',
     'Arthaud la coco',
     'Nathalie Arthaud qui ne passera pas le premier tour',
-    'Nathalie Arthaud qui avait fait 0.56% en 2012'
+    'Nathalie Arthaud qui ne passera pas les 1%'
 ];
 
 var hollandes = [
@@ -231,10 +237,10 @@ function walkText(node) {
         node.data = capFirstLetter(node.data);
         didReplace = false;
     }
-  }
-  if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
-    for (var i = 0; i < node.childNodes.length; i++) {
-      walkText(node.childNodes[i]);
+    if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
+        for (var i = 0; i < node.childNodes.length; i++) {
+        walkText(node.childNodes[i]);
+        }
     }
   }
 }
