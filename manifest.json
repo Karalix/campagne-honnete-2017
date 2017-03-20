@@ -11,6 +11,11 @@
       "matches": ["*://*/*"],
       "js": ["truther.js"]
     }
-  ]
+  ],
+
+  "icons": {
+    "48": "icons/border-48.png",
+    "96": "icons/border-96.png"
+  }
 
 }
