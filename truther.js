@@ -71,49 +71,49 @@ function walkText(node) {
         node.data = node.data.replace(melenchonReg, replacer(melenchons));
         nodeModified = true;
       } else {
-          node.data = node.data.replace(/[jJ]ean[ -][lL]uc [mM][ée]lenchon/g, replacer(melenchons));
+          node.data = node.data.replace(/[mM][ée]lenchon/g, replacer(melenchons));
       }
 
       if(node.data.search(macronReg) >= 0){
         node.data = node.data.replace(macronReg, replacer(macrons));
         nodeModified = true;
       } else {
-          node.data = node.data.replace(/[eE]mmanuel [mM]acron/g, replacer(macrons));
+          node.data = node.data.replace(/[mM]acron/g, replacer(macrons));
       }
 
       if(node.data.search(hamonReg) >= 0){
         node.data = node.data.replace(hamonReg, replacer(hamons));
         nodeModified = true;
       } else {
-          node.data = node.data.replace(/[bB]eno[iî]t [hH]amon/g, replacer(hamons));
+          node.data = node.data.replace(/[hH]amon/g, replacer(hamons));
       }
 
       if(node.data.search(penReg) >= 0){
         node.data = node.data.replace(penReg, replacer(pens));
         nodeModified = true;
       } else {
-          node.data = node.data.replace(/[mM]arine [lL]e [pP]en/g, replacer(pens));
+          node.data = node.data.replace(/[lL]e [pP]en/g, replacer(pens));
       }
 
       if(node.data.search(hollandeReg) >= 0){
         node.data = node.data.replace(hollandeReg, replacer(hollandes));
         nodeModified = true;
       } else {
-          node.data = node.data.replace(/[fF]ran[cç]ois [hH]ollande/g, replacer(hollandes));
+          node.data = node.data.replace(/[hH]ollande/g, replacer(hollandes));
       }
       
       if(node.data.search(trumpReg) >= 0){
         node.data = node.data.replace(trumpReg, replacer(trumps));
         nodeModified = true;
       } else {
-          node.data = node.data.replace(/[dD]onald [tT]rump/g, replacer(trumps));
+          node.data = node.data.replace(/[tT]rump/g, replacer(trumps));
       }
 
       if(node.data.search(vallsReg) >= 0){
         node.data = node.data.replace(vallsReg, replacer(valls));
         nodeModified = true;
       } else {
-          node.data = node.data.replace(/[mM]anuel [vV]alls/g, replacer(valls));
+          node.data = node.data.replace(/[vV]alls/g, replacer(valls));
       }
 
 
@@ -121,7 +121,7 @@ function walkText(node) {
         node.data = node.data.replace(sarkoReg,replacer(sarkos));
         nodeModified = true;
       } else {
-          node.data = node.data.replace(/[nN]icolas [sS]arkozy/g, replacer(sarkos));
+          node.data = node.data.replace(/[sS]arkozy/g, replacer(sarkos));
       }
 
       if(nodeModified){
