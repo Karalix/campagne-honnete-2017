@@ -13,7 +13,7 @@ var hamons = ["Benoît Hamon, le mec qui sert à rien","le petit Benoît Hamon",
 
 var pens = ["Marine la facho", "Le Pen la facho","Marine (la fille du borgne)", "Marine la morue", "Marine la raciste", "Marine la teubé", "la grosse Le Pen", "Marine la blondasse", "Marine, la fille de cet abruti de Jean-Marie", "Marine Le Pen (qui a pas un peu grossi ?)", "cette abrutie de Marine Le Pen", "Marine la chieuse", "Marine le sac à merde","Marine Le Pen la vendeuse de poisson","Marine la blondinette"];
 
-var hollandes = ["le gros Hollande", "Hollande le président moisi", "ce mauvais président qu'était François Hollande", "Hollande le mauvais président", "François Hollande le regrétté (non)","cette feignasse de François Hollande", "Hollande le minable","cette loque de François Hollande","François Hollande ce vieux naze", "Flanby", "cette moule de François Hollande"];
+var hollandes = ["le gros Hollande", "Hollande le président moisi", "ce mauvais président qu'était François Hollande", "Hollande le mauvais président", "François Hollande le regrétté (non)","cette feignasse de François Hollande", "Hollande le minable","cette loque de François Hollande","François Hollande ce vieux naze", "Flamby", "cette moule de François Hollande"];
 
 var sarkos = ["Sarko la fripouille", "le petit Nicolas Sarkozy", "cette racaille de Sarkozy","Sarko le ripou","Sarkozy le voleur","cet enfoiré de Sarkozy","cette hyène de Nicolas Sarkozy","Sarko l'enfoiré","Sarko la magouille","cet empaffé de Nicolas Sarkozy", "Sarkozy le bandit", "Sarkozy ce petit escroc", "ce pickpocket de Nicolas Sarkozy", "Sarkozy le gangster"];
 
