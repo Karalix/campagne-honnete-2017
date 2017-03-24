@@ -3,7 +3,7 @@
  * Development : Karalix (github.com/Karalix)
  */
 
-var fillons = ["Fillon l'escroc", "cette racaille de Fillon","Fillon, l'homme aux gros sourcils","Fillon la vermine","François le voleur","Fillon le fion", "François Fillon le voyou", "Fillon l'enfoiré", "cette enflure de François Fillon", "François Fillon (le mec qui finira en prison)", "Fillon le sale voleur", "ce FDP de Fillon", "Fillon le ripou", "François Fillon cette raclure", "ce bandit de Fillon", "ce mafieu de Fillon","François le malhonnête"];
+var fillons = ["Fillon l'escroc", "cette racaille de Fillon","Fillon, l'homme aux gros sourcils","Fillon la vermine","François le voleur","Fillon le fion", "François Fillon le voyou", "Fillon l'enfoiré", "cette enflure de François Fillon", "François Fillon (le mec qui finira en prison)", "Fillon le sale voleur", "ce maquereau de Fillon", "Fillon le ripou", "François Fillon cette raclure", "ce bandit de Fillon", "ce mafieu de Fillon","François le malhonnête"];
 
 var melenchons = ["Mélenchon le coco", "ce gueulard de Mélenchon","Mélenchon, le bourgeois communiste,","le fantôme du parti communiste Jean-Luc Mélenchon", "la Méluche", "ce vieux râleur de Mélenchon", "ce vieil aigri qu'est Mélenchon", "cette grande gueule de Mélenchon"];
 
@@ -17,7 +17,7 @@ var hollandes = ["le gros Hollande", "Hollande le président moisi", "ce mauvais
 
 var sarkos = ["Sarko la fripouille", "le petit Nicolas Sarkozy", "cette racaille de Sarkozy","Sarko le ripou","Sarkozy le voleur","cet enfoiré de Sarkozy","cette hyène de Nicolas Sarkozy","Sarko l'enfoiré","Sarko la magouille","cet empaffé de Nicolas Sarkozy", "Sarkozy le bandit", "Sarkozy ce petit escroc", "ce pickpocket de Nicolas Sarkozy", "Sarkozy le gangster"];
 
-var trumps = ["cet imbécile de Trump", "Trump l'abruti","cette enflure de Trump","Donald Trump le crétin","ce gros con de Trump","Donald Trump le misogyne", "Trump ce gros raciste", "Trump le teubé", "Donald le gros porc", "ce FDP de Trump", "cette vieille baltringue de Trump", "Donald Trump le vieux dégueulasse", "ce sac à merde de Trump", "Trump ce gros FDP", "Trump le blondinet"];
+var trumps = ["cet imbécile de Trump", "Trump l'abruti","cette enflure de Trump","Donald Trump le crétin","ce gros con de Trump","Donald Trump le misogyne", "Trump ce gros raciste", "Trump le teubé", "Donald le gros porc", "ce maquereau de Trump", "cette vieille baltringue de Trump", "Donald Trump le vieux dégueulasse", "ce sac à merde de Trump", "Trump ce gros proxénète", "Trump le blondinet"];
 
 var valls = ["Valls la fripouille", "Valls l'ordure", "Manuel Valls le vicieux", "Valls le loser", "ce coquinou de Manuel Valls", "Valls la tête à claque", "ce petit enfoiré de Manuel Valls", "ce perdant de Manuel Valls"];
 
