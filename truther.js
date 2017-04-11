@@ -21,6 +21,8 @@ var trumps = ["cet imbécile de Trump", "Trump l'abruti","cette enflure de Trump
 
 var valls = ["Valls la fripouille", "Valls l'ordure", "Manuel Valls le vicieux", "Valls le loser", "ce coquinou de Manuel Valls", "Valls la tête à claque", "ce petit enfoiré de Manuel Valls", "ce perdant de Manuel Valls"];
 
+var poutous = ["Poutou l'homme au marcel", "Philippe, celui qui possédait l'immunité ouvrière", "Poutou au pays des toupoutous", "Poutou, l'ouvrier pourfendeur du FN", "Poutou le syndiqué en marcel", "Poutou, le candidat aux t-shirts à 20€", "ce petit syndiqué gaucho mercello de Poutou"];
+
 var nodeModified = false;
 
 function randomIntFromInterval(min,max)
@@ -47,7 +49,6 @@ function replacer(list){
     return list[randomIntFromInterval(0,list.length-1)];
 }
 
-
 function walkText(node) {
   if (node.nodeType == 3) {
       var fillonReg = /[fF]ran[cç]ois [fF]illon/g;
@@ -59,6 +60,7 @@ function walkText(node) {
       var trumpReg = /[dD]onald [tT]rump/g;
       var vallsReg = /[mM]anuel [vV]alls/g;
       var sarkoReg = /[nN]icolas [sS]arkozy/g;
+      var poutouReg = /[pP]hilippe [pP]outou/g;
 
       if(node.data.search(fillonReg) >= 0){
         node.data = node.data.replace(fillonReg, replacer(fillons));
@@ -116,12 +118,18 @@ function walkText(node) {
           node.data = node.data.replace(/[vV]alls/g, replacer(valls));
       }
 
-
       if(node.data.search(sarkoReg) >= 0) {
         node.data = node.data.replace(sarkoReg,replacer(sarkos));
         nodeModified = true;
       } else {
           node.data = node.data.replace(/[sS]arkozy/g, replacer(sarkos));
+      }
+      
+      if(node.data.search(poutouReg) >= 0) {
+        node.data = node.data.replace(poutouReg,replacer(poutous));
+        nodeModified = true;
+      } else {
+          node.data = node.data.replace(/[pP]outou/g, replacer(poutous));
       }
 
       if(nodeModified){
