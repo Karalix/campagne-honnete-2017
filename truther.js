@@ -126,7 +126,7 @@ function walkText(node) {
       }
       
       if(node.data.search(poutouReg) >= 0) {
-        node.data = node.data.replace(sarkoReg,replacer(poutous));
+        node.data = node.data.replace(poutouReg,replacer(poutous));
         nodeModified = true;
       } else {
           node.data = node.data.replace(/[pP]outou/g, replacer(poutous));
