@@ -21,6 +21,8 @@ var trumps = ["cet imbécile de Trump", "Trump l'abruti","cette enflure de Trump
 
 var valls = ["Valls la fripouille", "Valls l'ordure", "Manuel Valls le vicieux", "Valls le loser", "ce coquinou de Manuel Valls", "Valls la tête à claque", "ce petit enfoiré de Manuel Valls", "ce perdant de Manuel Valls"];
 
+var dupontaignans = ["Dupont gnangnan", "NDA, le justicier du temps de parole", "Dupont et Dupond Aignan, le bookseller 2017", "NDA, grand maître des sondages", "Nicoco Dupont, grand orateur et professionnel du débat", "Ce champion de l'égo qu'est NDA", "NDA le mollusque", "Ce macrocéphale dont le nom ressemble à Dartagnan"];
+
 var nodeModified = false;
 
 function randomIntFromInterval(min,max)
@@ -59,6 +61,7 @@ function walkText(node) {
       var trumpReg = /[dD]onald [tT]rump/g;
       var vallsReg = /[mM]anuel [vV]alls/g;
       var sarkoReg = /[nN]icolas [sS]arkozy/g;
+      var dupontReg = /[nN]icolas [dD]upont-[aA]ignan/g;
 
       if(node.data.search(fillonReg) >= 0){
         node.data = node.data.replace(fillonReg, replacer(fillons));
@@ -122,6 +125,13 @@ function walkText(node) {
         nodeModified = true;
       } else {
           node.data = node.data.replace(/[sS]arkozy/g, replacer(sarkos));
+      }
+      
+      if(node.data.search(dupontReg) >= 0) {
+        node.data = node.data.replace(dupontReg,replacer(dupontaignans));
+        nodeModified = true;
+      } else {
+          node.data = node.data.replace(/[dD]upont-[aA]ignan/g, replacer(dupontaignans));
       }
 
       if(nodeModified){
