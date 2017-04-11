@@ -61,7 +61,7 @@ function walkText(node) {
       var trumpReg = /[dD]onald [tT]rump/g;
       var vallsReg = /[mM]anuel [vV]alls/g;
       var sarkoReg = /[nN]icolas [sS]arkozy/g;
-      var dupontReg = /[nN]icolas [dD]upont-[aA]ignan/g;
+      var dupontReg = /[nN]icolas [dD]upont[ -][aA]ignan/g;
 
       if(node.data.search(fillonReg) >= 0){
         node.data = node.data.replace(fillonReg, replacer(fillons));
