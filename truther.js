@@ -1,6 +1,6 @@
 /**
  * Original idea : Kek (zanorg.com)
- * Development : Karalix (github.com/Karalix)
+ * Development : Karalix (krlx.fr)
  */
 
 var birdNames = [];
