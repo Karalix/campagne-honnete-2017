@@ -5,23 +5,25 @@
 
 var birdNames = [];
 
-birdNames["fillons"] = ["Fillon l'escroc", "cette racaille de Fillon","Fillon, l'homme aux gros sourcils","Fillon la vermine","François le voleur","Fillon le fion", "François Fillon (le mec qui finira en prison) le voyou", "Fillon l'enfoiré", "cette enflure de François Fillon (le mec qui finira en prison)", "François Fillon (le mec qui finira en prison) (le mec qui finira en prison)", "Fillon le sale voleur", "ce FDP de Fillon", "Fillon le ripou", "François Fillon (le mec qui finira en prison) cette raclure", "ce bandit de Fillon", "ce mafieu de Fillon","François le malhonnête"];
+birdNames["poutous"] = ["Philippe Bisou", "Philippe Toumou","Poutou la gauchiasse", "ce sale Anarchiste de Poutou", "cet islamo-gauchiste de Poutou","Pouton le punk à chien","Pouton le zadiste", "Poutou le fan de Zaz", "Philippe Staline","Poutou le buveur de 8.6", "cette raclure de Poutou","ce loser de Poutou"];
 
-birdNames["melenchons"] = ["Mélenchon le coco", "ce gueulard de Mélenchon","Mélenchon, le bourgeois communiste,","le fantôme du parti communiste ce gueulard de Mélenchon", "la Méluche", "ce vieux râleur de Mélenchon", "ce vieil aigri qu'est Mélenchon", "cette grande gueule de Mélenchon"];
+birdNames["melenchons"] = ["Mélenchon le coco", "ce gueulard de Mélenchon","Mélenchon, le bourgeois communiste,","le fantôme du parti communiste ce gueulard de Mélenchon", "la Méluche", "ce vieux râleur de Mélenchon", "ce vieil aigri qu'est Mélenchon", "cette grande gueule de Mélenchon", "Mélenchon le mégalo","le schtroumpf Grognon", "Jean-Luc Mussolini", "Jean-Luc Staline", "Vladimir Mélenchon", "Mélenchion","cette raclure de Mélenchon","ce loser de Mélenchon"];
 
-birdNames["macrons"] = ["cet enfoiré de Macron", "Macron le voleur", "Macron le roublard", "Macron l'enfoiré", "ce voleur d'Macron la tête à claques","Macron le brigand", "Macron l'escroc", "Macron la crapule", "Macron l'homme à cougars", "cette enflure de Macron", "Macron le ripou", "ce filou de Macron", "Macron la tête à claques","Macron le cocaïnomane"];
+birdNames["macrons"] = ["cet enfoiré de Macron", "Macron le voleur", "Macron le roublard", "Macron l'enfoiré", "Macron le brigand", "Macron l'escroc", "Macron la crapule", "cette enflure de Macron", "Macron le ripou", "ce filou de Macron", "Macron la tête à claques","Macron le cocaïnomane", "Monsieur Perlimpinpin", "Manu le pourri", "Macron le banquier", "ce voyou de Macron","ce mauvais président qu'est Macron","cette raclure de Macron"];
 
-birdNames["hamons"] = ["Hamon le fumeur de spliff, le mec qui sert à rien","le petit Hamon le fumeur de spliff", "ce loser de Hamon", "Hamon le fumeur de spliff, le futur éliminé", "ce consternant Hamon le fumeur de spliff", "Hamon le fumeur de spliff le brasseur de vent ", "Hamon le fumeur de spliff", "Hamon le rastafaraï", "Benoît 'Ganja' Hamon", "Hamon, le gars complètement à l'ouest", "Hamon le fumeur de spliff, qui ne sera pas au second tour", "le malheureux perdant Hamon le fumeur de spliff"];
+birdNames["montebourgs"] = ["ce grand dadet de Montebourg", "Prout-Prout", "Monte-Bourges", "cet imbécile de Montebourg", "Montebourg le mec qui sert à rien","Arnaud le loser","cette raclure de Montebourg","ce loser de Montebourg"];
 
-birdNames["pens"] = ["Marine la facho", "Le Pen la facho","Marine (la fille du borgne)", "Marine la morue", "Marine la raciste", "Marine la teubé", "la grosse Le Pen", "Marine la blondasse", "Marine, la fille de cet abruti de Jean-Marie", "Marine la teubé (qui a pas un peu grossi ?)", "cette abrutie de Marine la teubé", "Marine la chieuse", "Marine le sac à merde","Marine la teubé la vendeuse de poisson","Marine la blondinette"];
+birdNames["pens"] = ["Marine la facho", "Le Pen la facho","Marine (la fille du borgne)", "Marine la raciste", "Marine la teubé", "Marine la blondasse", "Marine, la fille de ce connard de Jean-Marie", "cette abrutie de Marine la teubé", "Marine la chieuse", "Marine le sac à merde","Marine la blondinette","Marine la folle à chats","cette raclure de Le Pen"];
 
-birdNames["hollandes"] = ["le gros Hollande", "Hollande le président moisi", "ce mauvais président qu'était cette moule de François Hollande", "Hollande le mauvais président", "cette moule de François Hollande le regrétté (non)","cette feignasse de cette moule de François Hollande", "Hollande le minable","cette loque de cette moule de François Hollande","cette moule de François Hollande ce vieux naze", "Flamby", "cette moule de cette moule de François Hollande"];
+birdNames["jadots"] = ["Jadot le fumeur de bédos", "Jadot l'écolo en carton", "Jadot l'écolo Wish", "Jadot l'écolo en plastoc", "Jadot le bobo", "ce gros drogué de Jadot", "cette raclure de Jadot", "Yannick 'Ganja' Jadot", "ce gros Loser de Yannick Jadot"];
 
-birdNames["sarkos"] = ["Sarko la fripouille", "le petit cette racaille de Sarkozy", "cette racaille de Sarkozy","Sarko le ripou","Sarkozy le voleur","cet enfoiré de Sarkozy","cette hyène de cette racaille de Sarkozy","Sarko l'enfoiré","Sarko la magouille","cet empaffé de cette racaille de Sarkozy", "Sarkozy le bandit", "Sarkozy ce petit escroc", "ce pickpocket de cette racaille de Sarkozy", "Sarkozy le gangster"];
+birdNames["hidalgos"] = ["Annie Dingo","cette gauchiasse d'Hidalgo", "Hidalgo l'islamogauchiste", "Madame flop", "Hidalgo l'incompétente", "Hidalgo la bobo", "notre drame de Paris", "cette raclure d'Hidalgo"];
 
-birdNames["trumps"] = ["cet imbécile de Trump", "Trump l'abruti","cette enflure de Trump","Donald Trump le crétin le crétin","ce gros con de Trump","Donald Trump le crétin le misogyne", "Trump ce gros raciste", "Trump le teubé", "Donald le gros porc", "ce FDP de Trump", "cette vieille baltringue de Trump", "Donald Trump le crétin le vieux dégueulasse", "ce sac à merde de Trump", "Trump ce gros FDP", "Trump le blondinet"];
+birdNames["pecresses"] = ["Pécresse la blondasse","Pécresse la traîtresse", "Pécresse la femme de ménage","Valoche", "la reine du quatre-quart", "Pécresse l'homophobe","cette vieille peau de Pécresse","cette conne de Pécresse","cette vieille bourge de Pécresse","cette raclure de Pécresse","Pécresse la lobbyiste","Pécresse, la Thatcher à 2 balles"];
 
-birdNames["valls"] = ["Valls la fripouille", "Valls l'ordure", "Valls la fripouille le vicieux", "Valls le loser", "ce coquinou de Valls la fripouille", "Valls la tête à claque", "ce petit enfoiré de Valls la fripouille", "ce perdant de Valls la fripouille"];
+birdNames["zemmours"] = ["Gargamel","M. Burns","Zemmour le facho","Éric la crotte","cette enflure de Zemmour","cette petite merde de Zemmour", "ce vieux crouton de Zemmour", "cette saloperie de Zemmour","ce connard de misogyne de Zemmour","Zemmour la racaille", "ce gros nazi de Zemmour", "Adolf Zemmour", "ce sale pétainiste de Zemmour", "Zemmour ce putain d'aigri", "la pute à Bolloré", "la pute à clic de Bolloré","ce serpent de Zemmour","ce geyser de chiasse de Zemmour","Islamophobix","cette raclure de Zemmour"];
+
+birdNames["dupontaignans"] = ["ce gros con de Dupont-Aignan", "ce sale complotiste de Dupont-Aignan", "Dupont-Aignan le platiste","cette ordure de Dupont-Aignan", "Ducon-Gnangnan", "ce gogole de Dupont-Aignan", "ce gros teubé de Dupont-Aignan", "cet escroc de Dupont-Aignan","ce loser de Dupont-Aignan","cette raclure de Dupont-Aignan","Nico le ripou"];
 
 
 var nodeModified = false;
@@ -55,15 +57,16 @@ function walkText(node) {
   if (node.nodeType == 3) {
       
       var regs = [
-      ["fillons", /[fF]ran[cç]ois [fF]illon/g, /[fF]illon/g],
+      ["poutous", /[pP]hilippe [pP]outou/g, /[pP]outou/g],
       ["melenchons", /[jJ]ean[ -][lL]uc [mM][ée]lenchon/g, /[mM][ée]lenchon/g],
       ["macrons", /[eE]mmanuel [mM]acron/g, /[mM]acron/g],
-      ["hamons", /[bB]eno[iî]t [hH]amon/g, /[hH]amon/g],
+      ["montebourgs", /[aA]rnaud [mM]ontebourg/g, /[mM]ontebourg/g],
       ["pens", /[mM]arine [lL]e [pP]en/g, /[lL]e [pP]en/g],
-      ["hollandes", /[fF]ran[cç]ois [hH]ollande/g, /[hH]ollande/g],
-      ["trumps", /[dD]onald [tT]rump/g, /[tT]rump/g],
-      ["valls", /[mM]anuel [vV]alls/g, /[vV]alls/g],
-      ["sarkos", /[nN]icolas [sS]arkozy/g, /[sS]arkozy/g]
+      ["jadots", /[yY]annick [jJ]adot/g, /[jJ]adot/g],
+      ["hidalgos", /[aA]nne [hH]idalgo/g, /[hH]idalgo/g],
+      ["pecresses", /[vV]al[ée]rie [pP][ée]cresse/g, /[pP][ée]cresse/g],
+      ["zemmours", /[eEéÉ]ric [zZ]emmour/g, /[zZ]emmour/g],
+      ["dupontaignans", /[nN]icolas [dD]upont[- ][aA]ignan/g, /[dD]upont[- ][aA]ignan/g],
       ];
       
       for (var i = 0; i < regs.length; i++)
