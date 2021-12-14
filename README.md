@@ -1,6 +1,6 @@
 # Campagne honnête ~~2017~~ 2022
 
-A télécharger pour [Firefox](https://addons.mozilla.org/fr/firefox/addon/campagne-honn%C3%AAte-2017/) et [Chrome](https://chrome.google.com/webstore/detail/campagne-honn%C3%AAte-2017/hanbnphdeejadinmihanjclchofddkam).
+A télécharger pour [Firefox](https://addons.mozilla.org/fr/firefox/addon/campagne-honn%C3%AAte-2022/) et [Chrome](https://chrome.google.com/webstore/detail/campagne-honn%C3%AAte-2017/hanbnphdeejadinmihanjclchofddkam).
 
 L'actualité politique vous déprime ? Vous n'en pouvez plus des campagnes électorales ? Rendez les internets plus rigolos avec cette extension !
 
