@@ -55,24 +55,24 @@ function replacer(list){
 
 function walkText(node) {
   if (node.nodeType == 3) {
-      
+
       var regs = [
       ["poutous", /[pP]hilippe [pP]outou/g, /[pP]outou/g],
       ["melenchons", /[jJ]ean[ -][lL]uc [mM][ée]lenchon/g, /[mM][ée]lenchon/g],
       ["macrons", /[eE]mmanuel [mM]acron/g, /[mM]acron/g],
       ["montebourgs", /[aA]rnaud [mM]ontebourg/g, /[mM]ontebourg/g],
-      ["pens", /[mM]arine [lL]e [pP]en/g, /[lL]e [pP]en/g],
+      ["pens", /[mM]arine [lL]e [pP]en/g, /\b[lL]e [pP]en\b/g],
       ["jadots", /[yY]annick [jJ]adot/g, /[jJ]adot/g],
       ["hidalgos", /[aA]nne [hH]idalgo/g, /[hH]idalgo/g],
       ["pecresses", /[vV]al[ée]rie [pP][ée]cresse/g, /[pP][ée]cresse/g],
       ["zemmours", /[eEéÉ]ric [zZ]emmour/g, /[zZ]emmour/g],
       ["dupontaignans", /[nN]icolas [dD]upont[- ][aA]ignan/g, /[dD]upont[- ][aA]ignan/g],
       ];
-      
+
       for (var i = 0; i < regs.length; i++)
       {
           var birdName = birdNames[regs[i][0]];
-          
+
           if(node.data.search(regs[i][1]) >= 0){
             node.data = node.data.replace(regs[i][1], replacer(birdName));
             nodeModified = true;
@@ -80,14 +80,14 @@ function walkText(node) {
               node.data = node.data.replace(regs[i][2], replacer(birdName));
           }
       }
-      
+
       if(nodeModified){
         node.data = capNodeData(node.data);
         nodeModified = false;
       }
 
   }
-    
+
   if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
         for (var i = 0; i < node.childNodes.length; i++) {
         walkText(node.childNodes[i]);
